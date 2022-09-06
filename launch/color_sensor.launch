@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+    <node pkg="rev_color_sensor_ros" type="color_sensor_node.py" name="color_sensor" output="screen" respawn="true">
+        <rosparam command="load" file="$(find rev_color_sensor_ros)/config/color_config.yaml" />
+    </node>
+</launch>
