@@ -6,7 +6,7 @@ from catkin_pkg.python_setup import generate_distutils_setup
 # fetch values from package.xml
 setup_args = generate_distutils_setup(
     packages=['rev_color_sensor_ros'],
-    package_dir=find_packages('src'),
+    package_dir={'': 'src'},
     )
 
 setup(**setup_args)
